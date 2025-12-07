@@ -17,7 +17,7 @@
         <webdrivermanager.version>6.3.3</webdrivermanager.version>
         <allure.version>2.29.1</allure.version>
 
-        <aspectj.version>1.9.6</aspectj.version>
+        <aspectj.version>1.9.24</aspectj.version>
 
     </properties>
 
@@ -51,6 +51,13 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+        </dependency>
+
 
     </dependencies>
 
