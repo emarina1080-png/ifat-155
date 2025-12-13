@@ -16,9 +16,7 @@
         <testng.version>7.10.2</testng.version>
         <webdrivermanager.version>6.3.3</webdrivermanager.version>
         <allure.version>2.29.1</allure.version>
-
         <aspectj.version>1.9.24</aspectj.version>
-
     </properties>
 
     <dependencies>
@@ -57,8 +55,6 @@
             <artifactId>lombok</artifactId>
             <version>1.18.42</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
@@ -80,9 +76,6 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
             </plugin>
-
         </plugins>
     </build>
-
-
 </project>
