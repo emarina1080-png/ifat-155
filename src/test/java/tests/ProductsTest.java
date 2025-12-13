@@ -14,9 +14,9 @@ public class ProductsTest extends BaseTest {
         loginPage.open();
         loginPage.login(withAdminPermission());
         productsPage.isPageLoaded("Products");
-        productsPage.addToCart("Test.allTheThings() T-Shirt (Red)");
-        productsPage.addToCart("Sauce Labs Bolt T-Shirt");
-        productsPage.addToCart(3);
+        productsPage.addToCart("Test.allTheThings() T-Shirt (Red)")
+                .addToCart("Sauce Labs Bolt T-Shirt")
+                .addToCart(2);
         assertEquals(productsPage.checkGoodsQuantity(), "3");
 
     }

@@ -42,8 +42,9 @@ public class LoginTest extends BaseTest {
     @Issue("ifat-155")
     @Test(description = "Проверка некорректного логина", priority = 1, dataProvider = "loginData")
     public void checkIncorrectLogin(User user, String errorMsg) {
-        loginPage.open();
-        loginPage.login(user);
+        loginPage
+                .open()
+                .login(user);
         assertTrue(loginPage.isErrorMsgAppear(), "Error message does not appear");
         assertEquals(loginPage.errorMsgText(), errorMsg);
     }
@@ -52,8 +53,8 @@ public class LoginTest extends BaseTest {
     public void checkCorrectLogin() {
         System.out.println("LoginTest corr is running in thread: " + Thread.currentThread().getId());
 
-        loginPage.open();
-        loginPage.login(withAdminPermission());
+        loginPage.open()
+                .login(withAdminPermission());
 
         assertTrue(productsPage.isPageLoaded(PRODUCTS.getDisplayName()), "Register btn is not visible");
     }
