@@ -9,7 +9,5 @@ public enum TitleNaming {
     PRODUCTS("Products"),
     CARTS("Your Cart"),
     CHECKOUT("Checkout: Your Information");
-
-
     private final String displayName;
 }
